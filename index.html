@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patterns in javascript</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    let N = 5;
+    document.write("<h3>1) Square Pattern </h3>");
+    for (let i = 0; i < N; i++) {
+        for (let j = 0; j < N; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<h3>2) Right Half Pyramid Pattern </h3>");
+    for (let i = 0; i < N; i++) {
+        for (let j = 0; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<h3>3) Inverted right half pyramid pattern </h3>");
+    for (let i = 0; i < N; i++) {
+        for (let j = 0; j < N - i; j++) {
+            //document.write('&nbsp;');
+            document.write('*');
+        }
+        document.write("<br>");
+    }
+
+    document.write("<h3>4) Left pyramid pattern</h3>");
+    for (let i = 0; i < N; i++) {
+        for (let j = 0; j < N - i; j++) {
+            //document.write('&nbsp;');
+            document.write('&nbsp;&nbsp;');
+        }
+        for (let k = 0; k <= i; k++) {
+            document.write('*');
+        }
+        document.write("<br>");
+    }
+
+    document.write("<h3>5) Inverted left pyramid pattern</h3>");
+    for (let i = 0; i < N; i++) {
+        for (let k = 0; k < i; k++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let j = 0; j < N - i; j++) {
+            document.write('*');
+        }
+        document.write("<br>");
+    }
+
+    document.write("<h3>6) Full pyramid pattern</h3>");
+    for (let i = 0; i <= N; i++) {
+        for (let j = 0; j < N - i; j++) {
+            document.write('&nbsp')
+        }
+        for (let k = 0; k < i; k++) {
+            document.write('*')
+        }
+        /*for (let l = 1; l <= i; l++) {
+            document.write('*')
+        }*/
+        document.write('<br>')
+    }
+
+    document.write("<h3>7) Inverse full pyramid pattern</h3>");
+
+    for (let i = 0; i <= N; i++) {
+        for (let k = 0; k < i; k++) {
+            document.write('&nbsp');
+        }
+        for (let j = 0; j < N - i; j++) {
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+
+    document.write("<h3>8) Rhombus pattern</h3>");
+    for (let i = 0; i < N; i++) {
+        for (let k = 0; k < i; k++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let j = 0; j < N; j++) {
+            document.write('*');
+        }
+        document.write("<br>");
+    }
+</script>
+</html>
